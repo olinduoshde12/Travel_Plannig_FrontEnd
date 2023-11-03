@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle_DashBoard</title>
+    <link rel="stylesheet" href="css/vehicle_dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+<!--
+<div class="tittle">
+    <h2>VEHICLE_ADMIN_DASHBOARD</h2>
+    <hr>
+</div>
+-->
+<section id="model-container"  class="">
+    <div class="form-container animate__animated animate__zoomIn animate__delay-0.5s ">
+        <header>Vehicle Registration Details</header>
+        <div class="form">
+
+            <div class="first">
+
+                <div class="details">
+                    <span class="title">Vehicle Details</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label for="vehicleNumber">Vehicle Number</label>
+                            <input id="vehicleNumber" type="text" placeholder="Vehicle Number">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleBrand">Vehicle Brand</label>
+                            <input id="vehicleBrand" type="text" placeholder="Vehicle Brand">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleCategory">Vehicle Category</label>
+                            <select id="vehicleCategory" required>
+                                <option disabled selected value="1">Select Category</option>
+                                <option>S-Luxury</option>
+                                <option>Luxury</option>
+                                <option>Mid Rang</option>
+                                <option>Economy</option>
+                            </select>
+                            <!--                        <input id="vehicleCategory" type="text" placeholder="Enter Id number">-->
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleType">Vehicle Type</label>
+                            <select id="vehicleType" required>
+                                <option disabled selected value="1">Select Type</option>
+                                <option>Car</option>
+                                <option>Van</option>
+                                <option>SUV</option>
+                                <option>Bus</option>
+                            </select>
+                            <!--                        <input id="vehicleType" type="text" placeholder="Enter your name">-->
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleHybridOrNot">Hybrid Or Not</label>
+                            <select id="vehicleHybridOrNot" required>
+                                <option disabled selected value="1">Select</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <!--                        <input id="vehicleHybridOrNot" type="text" placeholder="Enter your email">-->
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleTransmissionType">Transmission Type</label>
+                            <select id="vehicleTransmissionType" required>
+                                <option disabled selected value="1">Select Type</option>
+                                <option>Auto</option>
+                                <option>Manual</option>
+                            </select>
+                            <!--                        <input id="vehicleTransmissionType" type="text" placeholder="Enter your Address">-->
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleSeatCapacity">Seat Capacity</label>
+                            <input id="vehicleSeatCapacity" type="number"  placeholder="Enter seat capacity">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleFuelType">Vehicle Fuel Type</label>
+                            <select id="vehicleFuelType" required>
+                                <option disabled selected value="1">Select Fuel Type</option>
+                                <option>Diesel</option>
+                                <option>Petrol</option>
+                            </select>
+                            <!--                        <input id="vehicleFuelType" type="text" placeholder="Enter your email">-->
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleFuelUsage">Fuel Usage (Km)</label>
+                            <input id="vehicleFuelUsage" type="number" placeholder="Enter Fee" >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleFee_for_1km">Fee for Km</label>
+                            <input id="vehicleFee_for_1km" type="number" placeholder="Enter Fee">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleFee_for_Day">Fee for Day</label>
+                            <input id="vehicleFee_for_Day" type="number"  placeholder="Enter Fee">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="vehicleStatus">Vehicle Status</label>
+                            <select id="vehicleStatus" required>
+                                <option disabled selected value="1">Select Status</option>
+                                <option>Eligible</option>
+                                <option>Not Eligible</option>
+                            </select>
+                            <!--                        <input id="vehicleFuelType" type="text" placeholder="Enter your email">-->
+                        </div>
+
+                    </div>
+
+                    <!--                    <div class="buttons">-->
+                    <!--                        <button id="nextBtn1" class="nextBtn" type="button">-->
+                    <!--                            <span class="btnText">Next</span>-->
+                    <!--                            <i class="uil uil-angle-right-b"></i>-->
+                    <!--                        </button>-->
+                    <!--                    </div>-->
+
+                </div>
+
+
+                    <div class="buttons">
+                        <button id="cancelBtn" class="backBtn" type="button">
+                            <i class="uil uil-cancel"></i>
+                            <span class="btnText">Back</span>
+                        </button>
+
+                        <button id="submitBtn" class="nextBtn" type="button">
+                            <span class="btnText">update</span>
+                            <i class="uil uil-angle-right-b"></i>
+                        </button>
+
+                        <button id="deleteBtn" class="nextBtn" type="button">
+                            <span class="btnText">delete</span>
+                            <i class="uil uil-angle-right-b"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="table">
+    <div class="table_header">
+        <p>VEHICLE_DASHBOARD</p>
+        <div>
+            <input type="text" placeholder="search vehicle">
+            <button class="add_new" id="new1">+ Update Vehicle</button>
+        </div>
+    </div>
+    <div class="table-section">
+        <table id="vehicle-table">
+            <thead>
+            <tr>
+                <th>v_id</th>
+                <th>picture</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Hybrid</th>
+                <th>fuel_usage</th>
+                <th>pay_of_1_Km</th>
+                <th>pay_of_1_day</th>
+                <th>status</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+<div class="paginator">
+</div>
+</div>
+<script src="../lib/jquery-3.6.4.min.js"></script>
+<script type="module" src="../js/vehiclejs.js"></script>
+<script type="module" src="../controller/VehicleController.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/userdash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<section id="model-container"  class="">
+  <div class="view-form animate__animated animate__zoomIn animate__delay-0.5s ">
+    <header>User Registration Details</header>
+
+    <div class="details form">
+      <!--        <span class="title">Personal Details</span>-->
+
+      <div class="fields">
+
+        <div class="input-field">
+          <label>ID </label>
+          <input id="id" type="text" placeholder="Enter Id Number" disabled>
+        </div>
+
+        <div class="input-field">
+          <label >FullName</label>
+          <input id="fullName" type="text" placeholder="Enter FullName">
+        </div>
+
+
+        <div class="input-field">
+          <label>ID Type</label>
+          <input id="nic_Type" type="text" placeholder="Enter Id Type">
+        </div>
+
+        <div class="input-field">
+          <label>Gender</label>
+          <input id="gender" type="text" placeholder="Enter Gender">
+        </div>
+
+        <div class="input-field">
+          <label>Address</label>
+          <input id="address" type="text" placeholder="Enter your Address">
+        </div>
+
+        <div class="input-field">
+          <label>Email</label>
+          <input id="email" type="text" placeholder="Enter your email">
+        </div>
+
+        <div class="input-field">
+          <label>contact</label>
+          <input id="contact" type="text" placeholder="Enter your Contact">
+        </div>
+
+        <div class="input-field">
+          <label>user_name</label>
+          <input id="user_name" type="text" placeholder="Enter user_name">
+        </div>
+
+        <div class="input-field">
+          <label>Password</label>
+          <input id="password" type="text"  placeholder="Enter password">
+        </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <button id="doneBtn" class="doneBtn" type="button">
+          update
+        </button>
+        <button id="deleteBtn" class="doneBtn" type="button">
+          Delete
+        </button>
+        <button id="cancelBtn" class="doneBtn  animate__zoomOut" type="button">
+          cancel
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<div class="table">
+  <div class="table_header">
+    <p class="animate__animated animate__lightSpeedInLeft animate__delay-2s " id="hed1">USER_DASHBOARD</p>
+    <div>
+      <input type="text" placeholder="search vehicle" id="input">
+      <button class="add_new" id="new1">+ Update User</button>
+    </div>
+  </div>
+  <div class="table-section animate__animated animate__zoomIn animate__delay-0.5s" >
+    <table id="myTable">
+      <thead>
+      <tr>
+        <th>id</th>
+        <th>picture</th>
+        <th>fullName</th>
+        <th>Id_Type</th>
+        <th>Id_No</th>
+        <th>gender</th>
+        <th>address</th>
+        <th>email</th>
+        <th>contact</th>
+        <th>user_name</th>
+        <th>password</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="paginator">
+    <button id="new_user" class="animate__animated animate__lightSpeedInLeft animate__delay-1s">Add new User</button>
+  </div>
+</div>
+<script src="../lib/jquery-3.6.4.min.js"></script>
+<script type="module" src="../controller/UserController.js"></script>
+<script type="module" src="../js/userjs.js"></script>
+</body>
+</html>

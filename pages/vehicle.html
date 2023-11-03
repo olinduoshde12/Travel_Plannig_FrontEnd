@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="user">
+    <div class="container">
+        <header>Vehicle Registration</header>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="tittle">Vehicle details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Vehicle_Id</label>
+                            <input type="text" placeholder="Enter Vehicle_Id" id="vehicleId">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Vehicle_Brand</label>
+                            <input type="text" placeholder="Enter Brand" id="vehicleBrand">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Category</label>
+                            <select id="vehicleCategory" required>
+                                <option disabled selected>Select Category Type</option>
+                                <option>S-Luxury</option>
+                                <option>Luxury</option>
+                                <option>Mid-Range</option>
+                                <option>Economy</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>HybridOrNot</label>
+                            <select id="vehicleHybridOrNot" required>
+                                <option disabled selected>Select  Type</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>FuelType</label>
+                            <select id="vehicleFuelType" required>
+                                <option disabled selected>Select Fuel Type</option>
+                                <option>Diesel</option>
+                                <option>Petrol</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>FuelUsage</label>
+                            <input type="text" placeholder="Enter Fuel Usage" id="vehicleFuelUsage">
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>SeatCapacity</label>
+                            <input type="number" placeholder="Enter seat Capacity" id="vehicleSeatCapacity">
+                        </div>
+
+                        <div class="input-field">
+                            <label>payment_in_one_km</label>
+                            <input type="text" placeholder="Enter Payment 1 km" id="vehicle_payment_in_one_km">
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>payment_in_oneDay</label>
+                            <input type="text" placeholder="Enter Payment i one Day" id="vehicle_payment_in_one_day">
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Status</label>
+                            <select id="vehicleStatus" required>
+                                <option disabled selected>Select status Type</option>
+                                <option>Eligible</option>
+                                <option>Not Eligible</option>
+                            </select>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>TransmissionType</label>
+                            <select id="vehicleTransmissionType" required>
+                                <option disabled selected>Select Transmission Type</option>
+                                <option>Auto</option>
+                                <option>Manual</option>
+                            </select>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>DriverName</label>
+                            <input type="text" placeholder="Enter Driver Name" id="vehicleDriverName">
+                        </div>
+
+                        <div class="input-field">
+                            <label>DriverContact</label>
+                            <input type="text" placeholder="Enter Driver Contact" id="vehicleDriverContact">
+                        </div>
+
+
+                        <div class="input-field">
+                            <input type="text" placeholder="ENTER PASSWORD" id="password">
+                        </div>
+
+
+                        <div class="input-field">
+                            <input type="text" placeholder="ENTER RE_PASSWORD" id="pa2">
+                        </div>
+                    </div>
+
+                    <button class="nextBtn" id="nextBtn1">
+                        <span class="btnNext">Next</span>
+                    </button>
+
+
+                </div>
+
+            <div class="form second">
+                <div class="details personal">
+                    <span class="tittle">Front  Photo</span>
+                    <div class="hero">
+                        <div class="card">
+                            <h1>Picture</h1>
+                            <p>@Picture</p>
+                            <img src="../images/bg.jpg" alt="" id="pro-pic">
+                            <label for="input-file" id="lbl2">Update Image</label>
+                            <input type="file" accept="image/*" id="input-file">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="ne1">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form third">
+                <div class="details personal">
+                    <span class="tittle">Side  Photo</span>
+                    <div class="hero">
+                        <div class="card">
+                            <h1>Picture</h1>
+                            <p>@Picture</p>
+                            <img src="../images/bg.jpg" alt="" id="pro-pic2" class="img2">
+                            <label for="input-file1" id="lbl3">Update Image</label>
+                            <input type="file" accept="image/*" id="input-file1">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="ne2">Next</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form forth">
+                <div class="details personal">
+                    <span class="tittle">Rare Photo</span>
+                    <div class="hero">
+                        <div class="card">
+                            <h1>Picture</h1>
+                            <p>@Picture</p>
+                            <img src="../images/bg.jpg" alt="" id="pro-pic3" class="img3">
+                            <label for="input-file2" id="lbl4">Update Image</label>
+                            <input type="file" accept="image/*" id="input-file2">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="ne4" style="background-color: #e3362c">Back</button>
+                        <button id="sub1">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--   <div class="form third">
+                       <main class="table">
+                           <section class="table-header">
+                               <h1>User Details</h1>
+                               <div class="input-group">
+                                   <input type="search" placeholder="User_Name or Id" id="input1">
+                                   <img src="../accests/icons8-search-30.png" alt="">
+                               </div>
+                           </section>
+                           <section class="table-body">
+                               <table id="mytable">
+                                   <thead>
+                                       <tr>
+                                           <th>id</th>
+                                           <th>pic</th>
+                                           <th>FullName</th>
+                                           <th>Id_Type</th>
+                                           <th>Id_No</th>
+                                           <th>Gender</th>
+                                           <th>address</th>
+                                           <th>email</th>
+                                           <th>contact</th>
+                                           <th>user_name</th>
+                                           <th>password</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody id="body1">
+
+                                   </tbody>
+                               </table>
+                           </section>
+                       </main>
+               </div>-->
+        </form>
+    </div>
+</section>
+<script type="module" src="../lib/jquery-3.6.4.min.js"></script>
+<script type="module" src="../js/vehicleMain.js"></script>
+<script type="module" src="../controller/VehicleController.js"></script>
+<script type="module" src="../js/photoslide.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="user">
+    <div class="container">
+    <header>User Registration</header>
+    <form action="#">
+        <div class="form first animate__animated animate__bounceInDown animate__delay-0.9s">
+             <div class="details personal animate__animated animate__bounceInDown animate__delay-0.9s" >
+            <span class="tittle">Personal details</span>
+            <div class="fields ">
+                <div class="input-field">
+                    <label>User_Id</label>
+                    <input type="text" placeholder="ENTER USER_ID" id="id">
+                </div>
+
+                <div class="input-field">
+                    <label>Full_Name</label>
+                    <input type="text" placeholder="ENTER FULL_NAME" id="fullName">
+                </div>
+
+                <div class="input-field">
+                    <label>Gender</label>
+                    <select id="gender" required>
+                        <option disabled selected>Select Gender Type</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label>Address</label>
+                    <input type="text" placeholder="ENTER ADDRESS" id="address">
+                </div>
+
+
+                <div class="input-field">
+                    <label>Email</label>
+                    <input type="text" placeholder="ENTER EMAIL" id="email">
+                </div>
+
+                <div class="input-field">
+                    <label>Contact</label>
+                    <input type="text" placeholder="Enter CONTACT" id="contact">
+                </div>
+            </div>
+        </div>
+
+            <div class="details personal animate__animated animate__bounceInDown animate__delay-0.9s">
+                <span class="tittle">Identity details</span>
+                <div class="fields">
+
+
+                    <div class="input-field">
+                        <select id="nic_Type" required>
+                            <option disabled selected>Select ID Type</option>
+                            <option>Nic</option>
+                            <option>Passport</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label style="color: crimson" id="lbl1">**First the Select Id Type And Enter the Id Number</label>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Id_Number</label>
+                        <input type="text" placeholder="ENTER USER_ID_Number" id="nic_no">
+                    </div>
+                </div>
+            </div>
+
+            <div class="details Account animate__animated animate__bounceInDown animate__delay-0.9s">
+                <span class="tittle">Account details</span>
+                <div class="fields">
+
+                    <div class="input-field">
+                        <label>User_Name</label>
+                        <input type="text" placeholder="ENTER USER_NAME" id="user_name">
+                    </div>
+
+
+                    <div class="input-field">
+                        <label>Password</label>
+                        <input type="text" placeholder="ENTER PASSWORD" id="password">
+                    </div>
+
+
+                    <div class="input-field">
+                        <label>Re-Enter-Password</label>
+                        <input type="text" placeholder="ENTER RE_PASSWORD">
+                    </div>
+                </div>
+
+                    <button class="nextBtn">
+                        <span class="btnNext">Next</span>
+                    </button>
+
+            </div>
+        </div>
+
+        <div class="form second ">
+            <div class="details personal">
+                <span class="tittle">Profile Photo</span>
+                <div class="hero">
+                    <div class="card">
+                        <h1>Picture</h1>
+                        <p>@Picture</p>
+                        <img src="../images/bg.jpg" alt="" id="pro-pic">
+                        <label for="input-file" id="lbl2">Update Image</label>
+                        <input type="file" accept="image/*" id="input-file">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="ne1">Back</button>
+                    <button id="ne3">Save</button>
+                </div>
+        </div>
+        </div>
+     <!--   <div class="form third">
+                <main class="table">
+                    <section class="table-header">
+                        <h1>User Details</h1>
+                        <div class="input-group">
+                            <input type="search" placeholder="User_Name or Id" id="input1">
+                            <img src="../accests/icons8-search-30.png" alt="">
+                        </div>
+                    </section>
+                    <section class="table-body">
+                        <table id="mytable">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>pic</th>
+                                    <th>FullName</th>
+                                    <th>Id_Type</th>
+                                    <th>Id_No</th>
+                                    <th>Gender</th>
+                                    <th>address</th>
+                                    <th>email</th>
+                                    <th>contact</th>
+                                    <th>user_name</th>
+                                    <th>password</th>
+                                </tr>
+                            </thead>
+                            <tbody id="body1">
+
+                            </tbody>
+                        </table>
+                    </section>
+                </main>
+        </div>-->
+    </form>
+    </div>
+</section>
+<script src="../lib/jquery-3.6.4.min.js"></script>
+<script src="../js/jsStyle.js" type="module"></script>
+<script type="module" src="../controller/UserController.js"></script>
+</body>
+</html>
